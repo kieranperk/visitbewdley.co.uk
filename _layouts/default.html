@@ -2,9 +2,19 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>{{ page.title }} | {{ site.title }}</title>
-  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+  <title>{{ page.title }} | Visit Bewdley</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}Discover attractions, events, and local businesses in Bewdley, Worcestershire. Plan your visit today!{% endif %}">
+  <meta property="og:title" content="{{ page.title }} | Visit Bewdley">
+  <meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}Discover attractions, events, and local businesses in Bewdley, Worcestershire. Plan your visit today!{% endif %}">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+  <meta property="og:image" content="{{ site.url }}/assets/images/hero.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{ page.title }} | Visit Bewdley">
+  <meta name="twitter:description" content="{% if page.description %}{{ page.description }}{% else %}Discover attractions, events, and local businesses in Bewdley, Worcestershire. Plan your visit today!{% endif %}">
+  <meta name="twitter:image" content="{{ site.url }}/assets/images/hero.jpg">
+  <link rel="stylesheet" href="/assets/css/style.css">
 </head>
 <body>
   {% include header.html %}

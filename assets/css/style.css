@@ -1,54 +1,109 @@
-/* Visit Bewdley Branding */
+/* ============================
+   Visit Bewdley – Base Styles
+   ============================ */
 
-/* Colours */
+/* Brand Colours */
 :root {
-  --river-blue: #2E6F95;
-  --forest-green: #3C6E47;
-  --brick-red: #A04732;
+  --blue-dark: #30519D;
+  --blue-mid: #4B6AB1;
+  --blue-light: #567ACE;
+
+  --green-dark: #0E5138;
+  --green-mid: #126345;
+  --green-bright: #197A56;
+
   --stone-grey: #D9D6CF;
-  --warm-cream: #F7F3EB;
+  --cream: #F7F3EB;
+
+  --brown-dark: #35241D;
+  --brown-warm: #774936;
 }
 
-/* Typography */
-body {
-  font-family: 'Inter', sans-serif;
+/* Reset + Body */
+* {
+  box-sizing: border-box;
   margin: 0;
-  background: var(--warm-cream);
-  color: #222;
+  padding: 0;
 }
 
+body {
+  font-family: "Inter", sans-serif;
+  background: var(--cream);
+  color: var(--brown-dark);
+  line-height: 1.6;
+}
+
+/* Headings */
 h1, h2, h3 {
-  font-family: 'Merriweather', serif;
-  color: var(--river-blue);
+  font-family: "Merriweather", serif;
+  margin-bottom: 0.75rem;
+  color: var(--blue-dark);
 }
 
+h1 {
+  font-size: 2.5rem;
+}
+h2 {
+  font-size: 1.75rem;
+}
+h3 {
+  font-size: 1.3rem;
+}
+
+/* Links */
 a {
-  color: var(--forest-green);
+  color: var(--blue-mid);
   text-decoration: none;
 }
 a:hover {
-  color: var(--brick-red);
+  color: var(--green-bright);
 }
 
-/* Layout */
+/* ============================
+   Header
+   ============================ */
 .site-header {
   background: var(--stone-grey);
-  padding: 1rem;
-  text-align: center;
-}
-.site-header nav a {
-  margin: 0 1rem;
-  font-weight: bold;
+  padding: 0.5rem 1rem;
 }
 
+.site-header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.logo img {
+  height: 50px;   /* adjust as needed */
+  width: auto;
+}
+
+.nav-links a {
+  margin-left: 1.5rem;
+  font-weight: bold;
+  color: var(--brown-dark);
+}
+.nav-links a:hover {
+  color: var(--blue-dark);
+}
+
+/* ============================
+   Footer
+   ============================ */
 .site-footer {
   background: var(--stone-grey);
   padding: 1rem;
   text-align: center;
+  font-size: 0.9rem;
   margin-top: 2rem;
+  color: var(--brown-dark);
 }
 
-/* Hero Section */
+/* ============================
+   Homepage
+   ============================ */
 .hero {
   position: relative;
   background: url('/assets/images/hero.jpg') center/cover no-repeat;
@@ -57,13 +112,15 @@ a:hover {
   align-items: center;
   justify-content: center;
 }
+
 .hero-overlay {
-  background: rgba(46, 111, 149, 0.7);
+  background: rgba(48, 81, 157, 0.7); /* overlay with blue-dark */
   color: white;
   text-align: center;
   padding: 2rem;
   border-radius: 12px;
 }
+
 .hero h1 {
   font-size: 3rem;
   margin-bottom: 0.5rem;
@@ -72,20 +129,29 @@ a:hover {
   font-size: 1.25rem;
 }
 
-/* Buttons */
+.intro {
+  max-width: 800px;
+  margin: 2rem auto;
+  text-align: center;
+  padding: 0 1rem;
+}
+
 .button {
   display: inline-block;
+  margin-top: 1rem;
   padding: 0.75rem 1.25rem;
-  background: var(--forest-green);
+  background: var(--green-bright);
   color: white;
   border-radius: 8px;
   font-weight: bold;
 }
 .button:hover {
-  background: var(--brick-red);
+  background: var(--brown-warm);
 }
 
-/* Page Layout */
+/* ============================
+   Page Layout
+   ============================ */
 .page {
   max-width: 800px;
   margin: 2rem auto;
@@ -93,16 +159,16 @@ a:hover {
 }
 
 .page-header h1 {
-  color: var(--river-blue);
+  color: var(--blue-dark);
   font-size: 2rem;
   margin-bottom: 1rem;
-  border-bottom: 3px solid var(--forest-green);
+  border-bottom: 3px solid var(--green-mid);
   display: inline-block;
   padding-bottom: 0.25rem;
 }
 
 .page-content {
-  line-height: 1.6;
-  font-size: 1.1rem;
-  color: #333;
+  line-height: 1.7;
+  font-size: 1.05rem;
+  color: var(--brown-dark);
 }
