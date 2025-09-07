@@ -84,3 +84,25 @@ a:hover {
 .button:hover {
   background: var(--brick-red);
 }
+
+/* Page Layout */
+.page {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.page-header h1 {
+  color: var(--river-blue);
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  border-bottom: 3px solid var(--forest-green);
+  display: inline-block;
+  padding-bottom: 0.25rem;
+}
+
+.page-content {
+  line-height: 1.6;
+  font-size: 1.1rem;
+  color: #333;
+}

@@ -1,6 +1,7 @@
 ---
 layout: page
 title: "About"
+permalink: /about/
 ---
 
 Visit Bewdley is a community project to highlight the best of our town - from nature walks and heritage sites to local food and events.  
