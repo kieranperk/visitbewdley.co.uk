@@ -1,0 +1,86 @@
+/* Visit Bewdley Branding */
+
+/* Colours */
+:root {
+  --river-blue: #2E6F95;
+  --forest-green: #3C6E47;
+  --brick-red: #A04732;
+  --stone-grey: #D9D6CF;
+  --warm-cream: #F7F3EB;
+}
+
+/* Typography */
+body {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  background: var(--warm-cream);
+  color: #222;
+}
+
+h1, h2, h3 {
+  font-family: 'Merriweather', serif;
+  color: var(--river-blue);
+}
+
+a {
+  color: var(--forest-green);
+  text-decoration: none;
+}
+a:hover {
+  color: var(--brick-red);
+}
+
+/* Layout */
+.site-header {
+  background: var(--stone-grey);
+  padding: 1rem;
+  text-align: center;
+}
+.site-header nav a {
+  margin: 0 1rem;
+  font-weight: bold;
+}
+
+.site-footer {
+  background: var(--stone-grey);
+  padding: 1rem;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  background: url('/assets/images/hero.jpg') center/cover no-repeat;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero-overlay {
+  background: rgba(46, 111, 149, 0.7);
+  color: white;
+  text-align: center;
+  padding: 2rem;
+  border-radius: 12px;
+}
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+.hero p {
+  font-size: 1.25rem;
+}
+
+/* Buttons */
+.button {
+  display: inline-block;
+  padding: 0.75rem 1.25rem;
+  background: var(--forest-green);
+  color: white;
+  border-radius: 8px;
+  font-weight: bold;
+}
+.button:hover {
+  background: var(--brick-red);
+}
