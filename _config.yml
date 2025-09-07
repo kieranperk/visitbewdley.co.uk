@@ -1,0 +1,12 @@
+title: "Visit Bewdley"
+description: "Discover nature, heritage, and community in Bewdley"
+baseurl: ""
+url: "https://visitbewdley.co.uk"
+
+theme: null
+markdown: kramdown
+
+collections:
+  attractions:
+    output: true
+    permalink: /attractions/:title/
